@@ -14,7 +14,7 @@ def make_character():
     truefalse_race = True
     weapon = ""
     while truefalse_race != False:
-        race = input("Enter your race: ")
+        race = input("The advelable races in the world is: elf, dwarf, and human \n Enter your race: ")
 
         if race == "elf": 
             back_ground = "\nYou are from the forested lands of the south." \
@@ -48,6 +48,12 @@ def make_character():
         elif player_class == "ranger" or player_class == "archer":
             weapon = "bow"
             truefalse_weapon = False
+        elif player_class == "mage":
+            weapon = "staff"
+            truefalse_weapon = False
+        elif player_class == "necromancer":
+            weapon = "staff"
+            truefalse_weapon = False
         else:
             print("Invalid or class not included, choose another class")
 
@@ -71,6 +77,48 @@ def inv_rand():
     else:
         health_potions = 3
         gold = 50
+
+def higher_classes():
+    
+    """
+    Warrior: Valor Champion
+    Mage: Arcane Sorcerer
+    Assassin: Shadowblade Master
+    Archer: Precision Marksman
+    Necromancer: Deathweaver
+
+    Warrior: Paragon Vanguard
+    Mage: Archmagus
+    Assassin: Phantom Executioner
+    Archer: Seraphic Sharpshooter
+    Necromancer: Dreadlord Conduit
+
+    Warrior: Apex Warlord
+    Mage: Celestial Archon
+    Assassin: Nightshade Mastermind
+    Archer: Ethereal Ranger
+    Necromancer: Lich Sovereign
+
+    Warrior: Supreme Battlemaster
+    Mage: Astral Magus
+    Assassin: Ebon Shadowblade
+    Archer: Stellar Marksman
+    Necromancer: Abyssal Revenant
+
+    Warrior: Arcane warrior
+    Mage: Chronomantic Archon
+    Assassin: Eclipse Phantom
+    Archer: Astral Sagittarius
+    Necromancer: Dread Sovereign
+
+    Warrior: Eternal Vanguard
+    Mage: Archmage of the Cosmic Arcanum
+    Assassin: Abyssal Shadow Seraph
+    Archer: Stellar Seraphic Sentinel
+    Necromancer: Netherlord
+
+    """
+
 
         
 

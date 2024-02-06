@@ -67,36 +67,24 @@ def quest():
 
             print("The following is the quests open for your rank: \n")
             if rank == "F":
-                num1 = ["Explore the Forest", "Explore the mysterious forest.", "100 gold"]
-                quest_board.add_quest(num1)
+                num1 = quest_board.add_quest("Explore the Forest", "Explore the mysterious forest.", "100 gold")
                 num2 = quest_board.add_quest('Monster hunt', 'Hunt a goblin.', '5 gold')
                 num3 = quest_board.add_quest("Explore the Forest", "Explore the mysterious forest.", "100 gold")
                 num4 = quest_board.add_quest('Monster hunt', 'Hunt pack of wolfs.', '300 gold')
 
                 quest_board.display_quests()
             
-            user_input3 = int(input("which quest would you like to accept: "))
-            if user_input3 == 1:
-                print(quest_board.accept_quest(num1))
+            user_input = int(input("which quest would you like to accept: "))
+            if user_input == 1:
+                quest_board.accept_quest(num1)
                 true_false = True
-            elif user_input3 == 2:
+            elif user_input == 2:
                 quest_board.accept_quest(num2)
                 true_false = True
-            elif user_input3 == 3:
+            elif user_input == 3:
                 quest_board.accept_quest(num3)
                 true_false = True
-            elif user_input3 == 4:
+            elif user_input == 4:
                 quest_board.accept_quest(num4)
                 true_false = True
-
             
-        elif input_user == "l":
-            true_false == True
-
-        else:
-            print("That serves is not supported, please choose another optain: ")
-
-
-
-quest()
-        

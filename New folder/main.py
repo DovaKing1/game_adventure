@@ -1,5 +1,5 @@
 
-from quest_system import QuestBoard
+from quest_system import quest 
 from player_file import make_character, inv_rand, beginning
 from economy import shop
 
@@ -16,8 +16,7 @@ def town_evee():
     u_i = input("Would you like to go to the guild[g], to the store[s]: ")
 
     if u_i == "g":
-        quest1 = QuestBoard('Monster hunt', 'Hunt a goblin.', '5 gold')
-        QuestBoard.display_quests(quest1)
+        quest()
     if u_i == "s":
         shop()
 
